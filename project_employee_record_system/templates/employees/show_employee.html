@@ -1,0 +1,27 @@
+{% extends 'layouts/master.html' %}
+
+{% block title %}
+    Employee | Show
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1> This is an employee detail page. </h1>
+    <a href="{% url 'emp-index' %}" class="btn btn-primary">BACK</a>
+    <hr>
+    <div class="card">
+        <div class="card-header"><h3>{{ data.full_name }}</h3></div></div>
+        <div class="card-body">
+            <h6>{{ data.email }}</h6>
+            <h6>{{ data.contact }}</h6>
+            <h6>{{ data.dob }}</h6>
+            <h6>{{ data.join_date }}</h6>
+            <h6>{{ data.address }}</h6>
+            <h6>{{ data.gender }}</h6>
+            <h6>{{ data.blood_group }}</h6>
+        </div>
+    </div>
+</div>
+   
+{% endblock %}
+
